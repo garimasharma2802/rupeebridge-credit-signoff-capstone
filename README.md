@@ -207,9 +207,9 @@ The dashboard has four cards (Applications as a distinct count of applicant_id, 
 | No filter | 120 | 70.0% | 705.2 | 54,806 |
 | F selected | 66 | 57.6% | 702.0 | 56,708 |
 
-![Full dashboard](dashboard full.png)
+![Full dashboard](dashboard%20full.png)
 
-![Dashboard with F selected](dashboard female.png)
+![Dashboard with F selected](dashboard%20female.png)
 
 ## Task 4.3 Fairness view: what the red cells mean
 
