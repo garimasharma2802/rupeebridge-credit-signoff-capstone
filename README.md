@@ -149,17 +149,17 @@ Three actions RupeeBridge must take:
 
 | Column | Description | Data type | Observed range or values | Source | Quality rule |
 |---|---|---|---|---|---|
-| applicant_id | Unique reference for each loan application | Text | A001 to A120 (120 IDs) | Application system | Unique and never blank |
-| age | Applicant's age in years | Whole number | 22 to 59 | Derived from date of birth (KYC form) | Whole number of at least 18 |
-| gender | Applicant's gender | Text | F, M | KYC form | Only F or M |
-| city_tier | Tier of the applicant's city | Text | Tier1, Tier2, Tier3 | Application data | Only Tier1, Tier2 or Tier3 |
-| monthly_income_inr | Applicant's monthly income in rupees | Number | 25800 to 551000 (551000 is a keying error; all other values are 25800 to 124000); 4 blank | Application | Greater than 0 and no more than 200000 (the application form limit) |
-| existing_emi_inr | Monthly instalments the applicant already pays, in rupees | Whole number | 200 to 39400 | Credit bureau | Zero or more, and below monthly income |
-| credit_score | Credit-bureau score of the applicant | Number | 554 to 850; 2 blank | Credit bureau | Number within the bureau's valid range and never blank |
-| call_intent_score | AI score derived from the verification call transcript | Whole number | 16 to 91 | Call centre and AI | Number from 0 to 100 and never blank |
-| approved | Model decision: 1 means approved, 0 means rejected | Whole number | 0 or 1 (84 approved) | Model output | Only 0 or 1 |
+| Applicant id | Unique reference for each loan application | Text | A001 to A120 (120 IDs) | Application system | Unique and never blank |
+| Age | Applicant's age in years | Whole number | 22 to 59 | Derived from date of birth (KYC form) | Whole number of at least 18 |
+| Gender | Applicant's gender | Text | F, M | KYC form | Only F or M |
+| City Tier | Tier of the applicant's city | Text | Tier1, Tier2, Tier3 | Application data | Only Tier1, Tier2 or Tier3 |
+| Monthly Income inr | Applicant's monthly income in rupees | Number | 25800 to 551000 (551000 is a keying error; all other values are 25800 to 124000); 4 blank | Application | Greater than 0 and no more than 200000 (the application form limit) |
+| Existing EMI inr | Monthly instalments the applicant already pays, in rupees | Whole number | 200 to 39400 | Credit bureau | Zero or more, and below monthly income |
+| Credit Score | Credit-bureau score of the applicant | Number | 554 to 850; 2 blank | Credit bureau | Number within the bureau's valid range and never blank |
+| Call Intent Score | AI score derived from the verification call transcript | Whole number | 16 to 91 | Call centre and AI | Number from 0 to 100 and never blank |
+| Approved | Model decision: 1 means approved, 0 means rejected | Whole number | 0 or 1 (84 approved) | Model output | Only 0 or 1 |
 
-Why metadata matters: metadata tells reviewers what each column means, where it came from and which values are valid, so the model's inputs can be trusted and checked.
+Why Metadata matters: metadata tells reviewers what each column means, where it came from and which values are valid, so the model's inputs can be trusted and checked.
 
 ### Task 3.3 Governance checks for the AI variable
 
