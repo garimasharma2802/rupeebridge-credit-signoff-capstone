@@ -1,0 +1,15 @@
+field_name,description,source,used_in_model,retention_months
+customer_id,Internal customer reference,Onboarding,Yes,84
+full_name,Applicant's full name,KYC form,No,84
+mobile_number,Mobile phone number,KYC form,No,60
+government_id_number,Government ID number,KYC form,No,84
+date_of_birth,Date of birth (used to derive age),KYC form,Yes,84
+home_address,Residential address,KYC form,No,60
+gender,Gender,KYC form,Yes,84
+religion,Religion,Onboarding survey,No,84
+employer_name,Name of employer,Application,No,36
+bank_account_number,Salary account number,Application,No,60
+monthly_income_inr,Monthly income,Application,Yes,84
+existing_emi_inr,Existing monthly EMI payments,Credit bureau,Yes,84
+credit_score,Credit-bureau score,Credit bureau,Yes,84
+call_recording_transcript,"Transcript of the verification call, converted by AI into a call-intent score",Call centre + AI,Yes,24
