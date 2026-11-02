@@ -4,7 +4,7 @@
 
 Garima Sharma completed all four Parts, the dashboard, the presentation and the repository on her own. The other team members did not respond or contribute.
 
-Tools used: Excel for Parts 1 to 3, Power BI Desktop for Part 4, and [name of your slide tool] for the presentation.
+Tools used: Excel for Parts 1 to 3, Power BI Desktop for Part 4, and Powerpoint for the presentation.
 
 ## Files in this repository
 
@@ -245,3 +245,7 @@ Conditions:
 | Drop or mask the 7 unused fields | 7 of 14 fields are not used, including religion and government ID | Governance | The model dataset holds only the fields it needs |
 | Add consent records and a 24-month retention rule for call recordings | Call transcripts are used without a documented consent and retention rule | Governance | Every call has a consent record and transcripts older than 24 months are deleted |
 | Add a recurring approval-rate check on the dashboard | The gender gap could return unnoticed | Stewardship | The dashboard is refreshed monthly and any cell below 60% is reported to the committee |
+
+## Task 4.6 Presentation and repository
+
+The presentation `RupeeBridge Presentation.pptx` has 8 slides: a cover, the problem, the approach, the data-quality findings, the privacy and security findings, the governance and fairness findings (with the approval-rate gap and the dashboard matrix), the sign-off recommendation with conditions and owners, and the risks and next steps. This repository is public and holds all the files listed at the top of this README.
